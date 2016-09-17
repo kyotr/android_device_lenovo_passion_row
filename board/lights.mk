@@ -1,0 +1,3 @@
+# Lights
+#TARGET_PROVIDES_LIBLIGHT := true
+#BOARD_HAS_BLN := true

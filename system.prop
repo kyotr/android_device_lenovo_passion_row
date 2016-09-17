@@ -1,0 +1,177 @@
+ro.telephony.default_network=9,1
+
+
+#lenovo-sw gezz1 add for boost begin
+ro.lenovo.boost.acty=true
+ro.lenovo.boost.input=true
+ro.lenovo.boost.power=true
+#lenovo gezz1 add for boost end
+
+
+
+#Begin, lenovo-sw ligh6 cross mapping
+persist.radio.primarycard=true
+persist.sys.ruimenabled=true
+#End, lenovo-sw ligh6 cross mapping
+
+#Begin, lenovo-sw ligh6 modify on 2015-01-25 PIKACHU-704
+persist.radio.aosp_usr_pref_sel=false
+#End, lenovo-sw ligh6 modify on 2015-01-25 PIKACHU-704
+
+#Lenovo BEGIN VIBE P1 for series name
+ro.lenovo.series=VIBE P1
+#END Lenovo VIBE P1 for series name
+
+# lenovo-sw jiayh2 change hwui params from qcom suggestion start
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=2048
+# lenovo-sw jiayh2 change hwui params from qcom suggestion start
+
+#lenovo-sw zhanghy15 20160225 add
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=5
+
+
+#lenovo-sw tengzl1 20160317 add
+voice.record.conc.disabled=false
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.fpradio.rat_on=combine
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+# Start in cdma mode
+ro.telephony.default_network=5
+
+debug.sf.hw=0
+debug.egl.hw=0
+persist.hwc.mdpcomp.enable=true
+debug.mdpcomp.logs=0
+dalvik.vm.heapsize=36m
+dev.pm.dyn_samplingrate=1
+persist.demo.hdmirotationlock=false
+debug.mdpcomp.idletime=600
+debug.enable.sglscale=1
+
+#system props for the MM modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+mm.enable.qcom_parser=3407871
+
+# Default to AwesomePlayer
+media.stagefright.use-awesome=false
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+
+#system props for time-services
+persist.timed.enable=true
+
+# System prop to turn on CdmaLTEPhone always
+telephony.lteOnCdmaDevice=1
+# System prop to turn on hfp client
+bluetooth.hfp.client=1
+
+#Trim properties
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=1073741824
+
+
+#Enable B service adj transition by default
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000
+
+ro.sys.fw.dex2oat_thread_count=6
+#min/max cpu in core control
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
+#Begin, lenovo-sw, houdz1 Add
+ro.qcom.ad=1
+ro.qcom.ad.sensortype=2
+debug.ad.logs=1
+debug.als.logs=1
+ro.qcom.ad.calib.data=/system/etc/calib.cfg
+#End, lenovo-sw, houdz1 add
+
+persist.sys.usb.config=mtp
+persist.sys.lenovo.shutdown=TRUE
+persist.sys.lenovo.log.limit=4000
+persist.sys.lenovo.log.disk=/sdcard
+persist.sys.lenovo.log.system=TRUE
+persist.sys.lenovo.log.kernel=TRUE
+persist.sys.lenovo.log.other=TRUE
+persist.sys.lenovo.log=FALSE
+persist.sys.dloadmode.config=0
+persist.sys.lenovo.Acrash.cnt=0
+persist.sys.lenovo.Kcrash.cnt=0
+persist.sys.lenovo.crash.path=/data/local/log/lastlog
+persist.sys.lenovo.crash.out=/sdcard/log_out
+persist.sys.lenovo.crash.disk=/sdcard
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=384m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=2m
+persist.sys.button_bkg_ctrl=true
+keyguard.no_require_sim=true
+ro.com.android.dataroaming=true
+ro.carrier=unknown
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.adb.qemud=1
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heaptargetutilization=0.75
+ro.vendor.extension_library=libqti-perfd-client.so
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.sib16_support=1
+persist.radio.custom_ecc=1
+drm.service.enabled=true
+ro.com.widevine.cachesize=16777216
+persist.sys.avatartestmode=false
+ro.product.hw.version=H201
+ro.lenovo.region=row
+ro.lenovo.device=phone
+ro.lenovo.sim=dsds
+ro.lenovo.operator=open
+ro.lenovo.platform=qualcomm
+ro.lenovo.bqb=pass
+ro.lenovo.wificert=no
+ro.lenovo.adb=apkctl
+ro.lenovo.signalbars=four
+ro.lenovo.stage=3t
+ro.lenovo.batterysize=5000
+ro.lenovo.lcdsize=5.5
+ro.lenovo.cpuinfo=MSM8939,8,1.7
+ro.lenovo.single_hand=1
+ro.com.google.gmsversion=6.0_r3
+ro.com.google.clientidbase=android-lenovo
+ro.com.google.clientidbase.ms=android-lenovo
+ro.com.google.clientidbase.am=android-lenovo
+ro.com.google.clientidbase.gmm=android-lenovo
+ro.com.google.clientidbase.yt=android-lenovo
+
